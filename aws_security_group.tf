@@ -1,5 +1,5 @@
 resource "aws_security_group" "allow_ssh_in" {
-  name        = "allow_all"
+  name        = "allow_ssh_in"
   description = "Allow all inbound traffic"
   vpc_id      = "${aws_vpc.main.id}"
 
@@ -12,7 +12,7 @@ resource "aws_security_group" "allow_ssh_in" {
 }
 
 resource "aws_security_group" "allow_ssh_out" {
-  name        = "allow_all"
+  name        = "allow_ssh_out"
   description = "Allow all inbound traffic"
   vpc_id      = "${aws_vpc.main.id}"
 
